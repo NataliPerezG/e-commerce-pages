@@ -12,101 +12,134 @@
 
 <body>
 
-  <header>
+  <header class="header">
     <img class="header-menu" src="./src/assets/icons/icon-menu.svg" alt="menu">
     <img class="header-logo" src="./src/assets/icons/logo.svg" alt="logo">
 
     <!-- stat nav for desktop -->
-    <nav class="header-nav">
-      <ul>
-        <li><a class="nav-item" href="#">Collections</a></li>
-        <li><a class="nav-item" href="#">Men</a></li>
-        <li><a class="nav-item" href="#">Women</a></li>
-        <li><a class="nav-item" href="#">About</a></li>
-        <li><a class="nav-item" href="#">Contact</a></li>
+    <nav class="navbar">
+      <ul class="navbar__items">
+        <li><a class="navbar__link" href="#">Collections</a></li>
+        <li><a class="navbar__link" href="#">Men</a></li>
+        <li><a class="navbar__link" href="#">Women</a></li>
+        <li><a class="navbar__link" href="#">About</a></li>
+        <li><a class="navbar__link" href="#">Contact</a></li>
       </ul>
     </nav>
     <!-- end nav for desktop -->
 
     <!-- stat nav for mobile -->
-    <nav class="nav-mobile">
-      <img class="nav-mobile__close" src="./src/assets/icons/icon-close.svg" alt="close menu">
-      <ul>
-        <li><a class="nav-mobile__item" href="#">Collections</a></li>
-        <li><a class="nav-mobile__item" href="#">Men</a></li>
-        <li><a class="nav-mobile__item" href="#">Women</a></li>
-        <li><a class="nav-mobile__item" href="#">About</a></li>
-        <li><a class="nav-mobile__item" href="#">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="modal-navbar__background">
+      <nav class="modal-navbar">
+        <img class="modal-navbar__close-icon" src="./src/assets/icons/icon-close.svg" alt="close menu">
+        <ul class="modal-navbar__items">
+          <li><a class="modal-navbar__links" href="#">Collections</a></li>
+          <li><a class="modal-navbar__links" href="#">Men</a></li>
+          <li><a class="modal-navbar__links" href="#">Women</a></li>
+          <li><a class="modal-navbar__links" href="#">About</a></li>
+          <li><a class="modal-navbar__links" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <!-- end nav for mobile -->
 
     <div class="header-info">
       <div class="header-info__cart">
-        <div class="cart-cant">3</div>
-        <img class="cart-icon" src="./src/assets/icons/icon-cart.svg" alt="cart">
+        <div class="header-info__cart--notification">3</div>
+        <img class="header-info__cart--icon" src="./src/assets/icons/icon-cart.svg" alt="cart">
       </div>
-      <img class="cart-avatar" src="./src/assets/images/image-avatar.png" alt="avatar">
+      <img class="header-info__avatar" src="./src/assets/images/image-avatar.png" alt="avatar">
     </div>
   </header>
 
-  <main>
-    <section class="gallery">
-      <img src="./src/assets/icons/icon-previous.svg" alt="previous">
-      <img src="./src/assets/icons/icon-next.svg" alt="next">
+  <main class="content">
 
+    <section class="gallery">
+      <div class="gallery__image-container">
+        <img class="gallery__previous" src="./src/assets/icons/icon-previous.svg" alt="previous">
+        <img class="gallery__next" src="./src/assets/icons/icon-next.svg" alt="next">
+      </div>
+      <div class="gallery__thumbnails">
+        <img id="1" class="gallerty__thumbnail" src="./src/assets/images/image-product-1-thumbnail.jpg"
+          alt="thumbnail1">
+        <img id="2" class="gallerty__thumbnail" src="./src/assets/images/image-product-2-thumbnail.jpg"
+          alt="thumbnail2">
+        <img id="3" class="gallerty__thumbnail" src="./src/assets/images/image-product-3-thumbnail.jpg"
+          alt="thumbnail3">
+        <img id="4" class="gallerty__thumbnail" src="./src/assets/images/image-product-4-thumbnail.jpg"
+          alt="thumbnail4">
+      </div>
     </section>
 
-    <section class="content-info">
-      <h2> Sneaker Company</h2>
-      <h3>Fall Limited Edition Sneakers</h3>
-
-      <p> These low-profile sneakers are your perfect casual wear companion. Featuring a
+    <section class="details">
+      <h2 class="details__company"> Sneaker Company</h2>
+      <h3 class="details__title">Fall Limited Edition Sneakers</h3>
+      <p class="details__description"> These low-profile sneakers are your perfect casual wear companion. Featuring a
         durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
 
-      <div class="content-info__price">
-        <div class="price-regular">
-          <p>$125.00 <span>50%</span></p>
-        </div>
-        <div class="price-descount">
-          <p>$250.00</p>
+      <div class="details__prices">
+        <p class="price-now">$125.00 <span class="price-discount">50%</span></p>
+        <p class="price-before">$250.00</p>
+      </div>
+
+      <div class="details__quantity">
+        <div class="quantity">
+          <img class="quantity__minus" src="./src/assets/icons/icon-minus.svg" alt="minus">
+          <input class="quantity__input" type="number" value="3">
+          <img class="quantity__plus" src="./src/assets/icons/icon-plus.svg" alt="plus">
         </div>
       </div>
 
-      <div class="content-cant">
-        <div class="cant">
-          <img src="./src/assets/icons/icon-minus.svg" alt="minus">
-          <input type="number" value="3">
-          <img src="./src/assets/icons/icon-plus.svg" alt="plus">
-        </div>
-      </div>
-
-      <button type="submit">
+      <button class="details__button" type="submit">
         <img src="./src/assets/icons/icon-cart.svg" alt="cart-button">
-        <p>Add to cart</p>
+        Add to cart
       </button>
     </section>
   </main>
 
   <!-- start fill modal cart -->
-  <div class="modal-cart">
-    <h4>Cart</h4>
-    <div class="modal-cart__info">
-      <img src="./src/assets/images/image-product-1-thumbnail.jpg" alt="thumbnail1">
-      <div class="modal-cart__description">
-        <p>Fail Limited Edition Sneakers</p>
-        <p>$125.00 x 3 <span>$375.00</span></p>
+  <div class="cart-modal">
+    <h4 class="cart-modal__title">Cart</h4>
+    <div class="cart-modal__info">
+      <div class="cart-modal__product">
+        <img src="./src/assets/images/image-product-1-thumbnail.jpg" alt="thumbnail1">
+        <div class="cart-modal__description">
+          <p class="cart-modal__description-text">Fail Limited Edition Sneakers</p>
+          <p class="cart-modal__description-price">$125.00 x 3 <span>$375.00</span></p>
+        </div>
+        <img class="cart-modal__product--delete" src="./src/assets/icons/icon-delete.svg" alt="delete icon">
       </div>
     </div>
-    <button class="modal-cart__button">Checkout</button>
+    <button class="cart-modal__button">Checkout</button>
   </div>
   <!-- end fill modal cart -->
 
   <!-- start modal gallery -->
-  <section class="gallery">
-    <img src="./src/assets/icons/icon-previous.svg" alt="previous">
-    <img src="./src/assets/icons/icon-next.svg" alt="next">
-  </section>
+
+  <div class="modal-gallery__background">
+
+    <section class="modal-gallery">
+      <img class="modal-gallery__close" src="./src/assets/icons/icon-close.svg" alt="close modal gallery">
+      <div class="modal-gallery__image-container">
+        <img class="modal-gallery__previous" src="./src/assets/icons/icon-previous.svg" alt="previous">
+        <img class="modal-gallery__next" src="./src/assets/icons/icon-next.svg" alt="next">
+      </div>
+
+      <div class="modal-gallery__thumbnails">
+        <img id="m1" class="modal-gallery__thumbnail" src="./src/assets/images/image-product-1-thumbnail.jpg"
+          alt="thumbnail1">
+        <img id="m2" class="modal-gallery__thumbnail" src="./src/assets/images/image-product-2-thumbnail.jpg"
+          alt="thumbnail2">
+        <img id="m3" class="modal-gallery__thumbnail" src="./src/assets/images/image-product-3-thumbnail.jpg"
+          alt="thumbnail3">
+        <img id="m4" class="modal-gallery__thumbnail" src="./src/assets/images/image-product-4-thumbnail.jpg"
+          alt="thumbnail4">
+      </div>
+
+    </section>
+
+  </div>
+
   <!-- end modal gallery -->
 
 
