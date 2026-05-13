@@ -1,7 +1,10 @@
+@custom-media --mobile (width <=350px);
+@custom-media --desktop (width >=1200px);
+
 :root {
     /* Meida queries */
     --mobile: 375px;
-    --desktop: 1440px;
+    --desktop: 1200px;
 
     /* Primary colors */
     --orange: hsl(26, 100%, 55%);
@@ -14,7 +17,6 @@
     --light-grayish-blue: hsl(223, 64%, 98%);
     --white: hsl(0, 0%, 100%);
     --black: hsl(0, 0%, 0%);
+    --black-modal: hsla(0, 0%, 0%, 0.7);
     /*with 75% opacity for lightbox background*/
-
-
 }

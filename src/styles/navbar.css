@@ -1,0 +1,22 @@
+.navbar {
+    display: block;
+    background-color: peru;
+
+    & .navbar__items {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+
+        & .navbar__link {
+            padding: 10px;
+            text-decoration: none;
+        }
+    }
+}
+
+
+
+.modal-navbar__background {
+    display: none;
+}

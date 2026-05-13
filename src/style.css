@@ -1,2 +1,4 @@
 @import './styles/variables.css';
 @import './styles/basic.css';
+@import './styles/header.css';
+@import './styles/navbar.css';

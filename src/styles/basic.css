@@ -9,6 +9,16 @@
 }
 
 body {
+    width: var(--mobile);
+    margin: auto;
     background-color: var(--white);
     font-family: "Kumbh Sans", sans-serif;
+
+    @media screen and (--desktop) {
+        width: var(--desktop);
+
+        .header {
+            border-bottom: 3px solid var(--light-grayish-blue);
+        }
+    }
 }
