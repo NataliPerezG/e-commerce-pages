@@ -8,43 +8,111 @@
   <script type="module" src="/src/main.js"></script>
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <style>
-    .attribution {
-      font-size: 0.6875rem;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-
 </head>
 
 <body>
-  Collections
-  Men
-  Women
-  About
-  Contact
 
-  Sneaker Company
+  <header>
+    <img class="header-menu" src="./src/assets/icons/icon-menu.svg" alt="menu">
+    <img class="header-logo" src="./src/assets/icons/logo.svg" alt="logo">
 
-  Fall Limited Edition Sneakers
+    <!-- stat nav for desktop -->
+    <nav class="header-nav">
+      <ul>
+        <li><a class="nav-item" href="#">Collections</a></li>
+        <li><a class="nav-item" href="#">Men</a></li>
+        <li><a class="nav-item" href="#">Women</a></li>
+        <li><a class="nav-item" href="#">About</a></li>
+        <li><a class="nav-item" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- end nav for desktop -->
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
+    <!-- stat nav for mobile -->
+    <nav class="nav-mobile">
+      <img class="nav-mobile__close" src="./src/assets/icons/icon-close.svg" alt="close menu">
+      <ul>
+        <li><a class="nav-mobile__item" href="#">Collections</a></li>
+        <li><a class="nav-mobile__item" href="#">Men</a></li>
+        <li><a class="nav-mobile__item" href="#">Women</a></li>
+        <li><a class="nav-mobile__item" href="#">About</a></li>
+        <li><a class="nav-mobile__item" href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- end nav for mobile -->
 
-  $125.00
-  50%
-  $250.00
+    <div class="header-info">
+      <div class="header-info__cart">
+        <div class="cart-cant">3</div>
+        <img class="cart-icon" src="./src/assets/icons/icon-cart.svg" alt="cart">
+      </div>
+      <img class="cart-avatar" src="./src/assets/images/image-avatar.png" alt="avatar">
+    </div>
+  </header>
 
-  0
-  Add to cart
+  <main>
+    <section class="gallery">
+      <img src="./src/assets/icons/icon-previous.svg" alt="previous">
+      <img src="./src/assets/icons/icon-next.svg" alt="next">
+
+    </section>
+
+    <section class="content-info">
+      <h2> Sneaker Company</h2>
+      <h3>Fall Limited Edition Sneakers</h3>
+
+      <p> These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+      <div class="content-info__price">
+        <div class="price-regular">
+          <p>$125.00 <span>50%</span></p>
+        </div>
+        <div class="price-descount">
+          <p>$250.00</p>
+        </div>
+      </div>
+
+      <div class="content-cant">
+        <div class="cant">
+          <img src="./src/assets/icons/icon-minus.svg" alt="minus">
+          <input type="number" value="3">
+          <img src="./src/assets/icons/icon-plus.svg" alt="plus">
+        </div>
+      </div>
+
+      <button type="submit">
+        <img src="./src/assets/icons/icon-cart.svg" alt="cart-button">
+        <p>Add to cart</p>
+      </button>
+    </section>
+  </main>
+
+  <!-- start fill modal cart -->
+  <div class="modal-cart">
+    <h4>Cart</h4>
+    <div class="modal-cart__info">
+      <img src="./src/assets/images/image-product-1-thumbnail.jpg" alt="thumbnail1">
+      <div class="modal-cart__description">
+        <p>Fail Limited Edition Sneakers</p>
+        <p>$125.00 x 3 <span>$375.00</span></p>
+      </div>
+    </div>
+    <button class="modal-cart__button">Checkout</button>
+  </div>
+  <!-- end fill modal cart -->
+
+  <!-- start modal gallery -->
+  <section class="gallery">
+    <img src="./src/assets/icons/icon-previous.svg" alt="previous">
+    <img src="./src/assets/icons/icon-next.svg" alt="next">
+  </section>
+  <!-- end modal gallery -->
+
 
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/NataliPerezG" target="_blank">Natalí Pérez</a>.
   </footer>
 </body>
 
