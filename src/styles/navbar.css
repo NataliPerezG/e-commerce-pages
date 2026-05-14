@@ -1,22 +1,69 @@
-.navbar {
-    display: block;
-    background-color: peru;
+.modal-navbar__background {
 
-    & .navbar__items {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--black-modal);
 
-        & .navbar__link {
-            padding: 10px;
-            text-decoration: none;
+    & .modal-navbar {
+        width: 60%;
+        height: 100dvh;
+        background-color: var(--white);
+
+        & .modal-navbar__close-icon {
+            margin-top: 20px;
         }
+
+        & .modal-navbar__close-icon:hover {
+            cursor: pointer;
+        }
+
+        & .modal-navbar__items {
+            margin-top: 50px;
+            height: 200px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
     }
+
+    @media screen and (--desktop) {
+        display: none;
+    }
+}
+
+.modal-navbar__links {
+    text-decoration: none;
+    padding: 10px 50px 10px 10px;
+    color: var(--very-dark-blue);
+    font-weight: 500;
 }
 
 
 
-.modal-navbar__background {
-    display: none;
+.navbar {
+    height: inherit;
+
+    & .navbar__items {
+        padding: 10px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+
+        & .navbar__link {
+            display: block;
+            padding: 30px 20px;
+            color: var(--dark-grayish-blue);
+            text-decoration: none;
+        }
+    }
+
+    & .navbar__items li:hover {
+        border-bottom: 4px solid var(--orange);
+    }
 }
