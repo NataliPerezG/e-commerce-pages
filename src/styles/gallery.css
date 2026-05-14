@@ -4,15 +4,13 @@
 
         @media screen and (--desktop) {
             display: block;
-            border: 5px solid plum;
         }
     }
 }
 
-
 .gallery__image-container {
     width: 100%;
-    height: 300px;
+    height: 320px;
     background-image: url('./../assets/images/image-product-1.jpg');
     background-size: cover;
     background-position-y: -30px;
