@@ -1,5 +1,5 @@
 .modal-navbar__background {
-
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -14,6 +14,8 @@
 
         & .modal-navbar__close-icon {
             margin-top: 20px;
+            margin-left: 10px;
+            padding: 10px;
         }
 
         & .modal-navbar__close-icon:hover {

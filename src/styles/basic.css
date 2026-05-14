@@ -11,7 +11,7 @@
 body {
     width: var(--mobile);
     margin: auto;
-    background-color: var(--white);
+    background-color: var(--black-modal);
     font-family: "Kumbh Sans", sans-serif;
 
     @media screen and (--desktop) {
@@ -21,4 +21,8 @@ body {
             border-bottom: 3px solid var(--light-grayish-blue);
         }
     }
+}
+
+.container {
+    background-color: var(--white);
 }
